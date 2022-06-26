@@ -18,7 +18,7 @@
 
 ## Demo
 
-![][(https://github.com/fbrv01/omdb/blob/main/GIF.gif)]
+![](https://github.com/fbrv01/omdb/blob/main/GIF.gif)
 
 https://fbrv01.github.io/omdb/#/
 
