@@ -1,0 +1,41 @@
+<div class="container align-content-center">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-12 text-center  mt-5"><h2>Search Movies</h2></div>
+    <div class="col-md-9 mt-3">
+      <app-search-bar></app-search-bar>
+    </div>
+    <div class="col-md-3 mt-3">
+      <select
+        class="custom-select"
+        [(ngModel)]="type"
+        (ngModelChange)="selectedOption($event)"
+      >
+        <option value="movie" selected>Movies</option>
+        <option value="series">Series</option>
+        <!-- <option value="episode">Episodes</option> -->
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12 mt-5" *ngIf="isResponse && !isLoading">
+      <!--checking response if success to show then only show-->
+      <app-movie-list [movies]="movies"></app-movie-list>
+
+
+    </div>
+    <div class="col-md-12 text-center mt-5" *ngIf="isLoading">
+      <img
+        src="https://thumbs.gfycat.com/CriminalWhichEasteuropeanshepherd-size_restricted.gif"
+        alt=""
+      />
+    </div>
+    <div
+      class="col-md-12 text-center mt-5"
+      *ngIf="!isLoading && !isResponse && ( searchString != null  &&  searchString != '') "
+    >
+      <h1>Results not found :(</h1>
+    </div>
+  </div>
+</div>
