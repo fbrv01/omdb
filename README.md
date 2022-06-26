@@ -23,4 +23,4 @@
 https://fbrv01.github.io/omdb/#/
 
 ## Dev Blog
-This was my first ever project in Angular na TS. It's reuploaded to a new repo to hide waaaaay too many tries to deploy this app on github pages :)
+This was my first ever project in Angular and TypeScript. It's reuploaded to a new repo to hide waaaaay too many tries to deploy this app on github pages :)
